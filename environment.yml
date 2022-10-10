@@ -12,4 +12,5 @@ dependencies:
   - pytorch
   - torchvision
   - pytorch-lightning
+  - hyperopt
 prefix: /opt/anaconda3/envs/saat

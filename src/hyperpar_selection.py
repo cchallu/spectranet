@@ -184,10 +184,8 @@ def run_model(mc,
     trainer = pl.Trainer(max_epochs=mc['max_epochs'],
                          max_steps=mc['max_steps'],
                          check_val_every_n_epoch=mc['eval_freq'],
-                         progress_bar_refresh_rate=1,
                          gpus=gpus,
                          callbacks=[],
-                         checkpoint_callback=False,
                          logger=False)
 
     trainer.fit(model, train_loader)
