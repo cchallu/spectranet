@@ -73,21 +73,12 @@ def get_experiment_space(args):
             'weight_decay': hp.choice('weight_decay', [ 0 ] ),
             'max_epochs': hp.choice('max_epochs', [ None ]),
             'max_steps': hp.choice('max_steps', [ 500, 1000 ]),
-            'early_stop_patience': hp.choice('early_stop_patience', [ 0 ]),
             'eval_freq': hp.choice('eval_freq', [ 1 ]),
-            'loss_train': hp.choice('loss', ['MSE']),
-            'loss_hypar': hp.choice('loss_hypar', [0.5]),
-            'loss_valid': hp.choice('loss_valid', ['MSE']),
             # Data parameters
-            'scaler': hp.choice('scaler', [None]),
-            'complete_windows':  hp.choice('complete_windows', [True]),
-            'frequency': hp.choice('frequency', ['H']),
-            'seasonality': hp.choice('seasonality', [1]),
             'sample_freq': hp.choice('sample_freq', [1, 24]),
             'val_sample_freq': hp.choice('val_sample_freq', [args.horizon]),
             'batch_size': hp.choice('batch_size', [8, 16, 32]),
             'eval_batch_size': hp.choice('eval_batch_size', [256]),
-            'n_windows': hp.choice('n_windows', [ None ]),
             'random_seed': hp.quniform('random_seed', 1, 10, 1)}
     return space
 
