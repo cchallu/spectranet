@@ -1,0 +1,15 @@
+name: spectranet
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - tqdm
+  - matplotlib
+  - pytorch
+  - torchvision
+  - pytorch-lightning
+prefix: /opt/anaconda3/envs/saat
