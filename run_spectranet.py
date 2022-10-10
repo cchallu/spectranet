@@ -195,7 +195,7 @@ if __name__ == '__main__':
     if args is None:
         exit()
 
-    occlusion_probs = [0.0] #, 0.2, 0.4, 0.6, 0.8]
+    occlusion_probs = [0.0, 0.2, 0.4, 0.6, 0.8]
     horizons = [24]
     datasets = [args.dataset]
 
@@ -213,5 +213,3 @@ if __name__ == '__main__':
                 args.occlusion_prob = occlusion_prob
                 main(args)
                 print('Time: ', time.time() - start)
-
-# CUDA_VISIBLE_DEVICES=1 python run_spectranet.py --dataset 'ILI' --hyperopt_max_evals 2 --occlusion_size 10 --experiment_id "debug"
