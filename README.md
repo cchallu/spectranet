@@ -12,6 +12,10 @@
 
 In this work we tackle two widespread challenges in real applications that have been largely understudied: distribution shifts and missing data. We propose SpectraNet, a novel multivariate time-series forecasting model that dynamically infers a latent space spectral decomposition to capture current temporal dynamics and correlations. A Convolution Neural Network maps the learnt representation by sequentially mixing its components and refining the output. Our proposed approach can simultaneously forecast and interpolate past observations. SpectraNet achieves SoTA performance on synthetic data and five benchmark datasets with up to 92% less parameters and comparable training times with baselines. On settings with up to 80% missing data, SpectraNet has average performance improvements of almost 50% over the second best alternative.
 
+<div style="text-align:center">
+<img src="./images/spectranet.png" width="700">
+</div>
+
 <!-- <a id="installation"></a> -->
 ## Installation
 
