@@ -24,7 +24,7 @@ To setup the environment using [`conda`](https://conda.io/projects/conda/en/late
     foo@bar:~$ conda env create -f environment.yml
     
     # To activate the environment
-    foo@bar:~$ conda activate saat 
+    foo@bar:~$ conda activate spectranet 
     
     # To verify if the new environment was installed correctly
     foo@bar:~$ conda env list 
